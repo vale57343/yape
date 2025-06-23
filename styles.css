@@ -1,0 +1,105 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #8000b0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 320px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.logo {
+  width: 90px;
+  margin: 0 auto 10px;
+  display: block;
+}
+
+.title {
+  color: #8000b0;
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.amount {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #8000b0;
+  margin-bottom: 1rem;
+}
+
+.amount span {
+  font-size: 2.2rem;
+}
+
+.info {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.btn {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn.share {
+  background-color: #8000b0;
+  color: #fff;
+}
+
+.btn.share:hover {
+  background-color: #6e0096;
+}
+
+.btn.home {
+  background-color: #8000b0;
+  color: #fff;
+}
+
+.btn.home:hover {
+  background-color: #6e0096;
+}
+
+.btn.reload {
+  background-color: #00bfa6;
+  color: #fff;
+}
+
+.btn.reload:hover {
+  background-color: #009e89;
+}
