@@ -1,69 +1,109 @@
+/* Fondo con gradiente suave */
 body {
   margin: 0;
   padding: 0;
-  background-color: #8000c9;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-.container {
-  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #8300c2, #a400d6);
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 }
 
+/* Contenedor principal */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Tarjeta blanca */
 .card {
-  background-color: white;
-  border-radius: 12px;
-  padding: 20px;
-  width: 280px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  padding: 24px;
   text-align: center;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
-  position: relative;
+  max-width: 320px;
+  width: 90%;
 }
 
+/* Logo de Yape */
 .logo {
   width: 80px;
-  position: absolute;
-  top: -40px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: white;
-  border-radius: 50%;
-  padding: 5px;
+  margin-bottom: 12px;
+}
+
+/* Texto principal */
+h2 {
+  color: #6a1b9a;
+  margin: 0;
+  font-size: 20px;
 }
 
 .monto {
-  font-size: 24px;
-  color: #8000c9;
+  font-size: 36px;
+  color: #8e24aa;
   font-weight: bold;
-  margin: 5px 0;
+  margin: 12px 0 4px;
 }
 
+.detalle {
+  font-size: 14px;
+  color: #666;
+  margin: 4px 0;
+}
+
+.fecha {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 12px;
+}
+
+hr {
+  margin: 16px 0;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+/* Datos de recarga */
+p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+strong {
+  color: #000;
+}
+
+/* Botones */
 .botones {
-  margin-top: 15px;
+  margin-top: 16px;
 }
 
-.botones button {
-  margin: 5px 4px;
-  padding: 8px 10px;
+button {
+  background-color: #8e24aa;
+  color: white;
   border: none;
-  border-radius: 6px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  margin: 6px 4px;
   cursor: pointer;
-  font-weight: bold;
+  font-size: 14px;
 }
 
-.botones button:first-child {
-  background-color: #8000c9;
-  color: white;
+button.secundario {
+  background-color: #009688;
 }
 
-.botones button:nth-child(2) {
-  background-color: #008080;
-  color: white;
+button.principal {
+  background-color: #6a1b9a;
+  width: 100%;
+  margin-top: 12px;
 }
 
-.botones button:last-child {
-  background-color: #990099;
-  color: white;
+button:hover {
+  opacity: 0.9;
 }
